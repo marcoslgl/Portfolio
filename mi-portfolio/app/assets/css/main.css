@@ -1,20 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   :root {
-    /* Los colores de tu mockup */
     --color-bg: #0f172a;
+    --color-bg-secondary: #1e293b;
     --color-primary: #22d3ee;
     --color-text-main: #f8fafc;
     --color-text-secondary: #94a3b8;
     --color-accent-pink: #f472b6;
+    --color-primary-hover: #06b6d4;
   }
 
   body {
     background-color: var(--color-bg);
     color: var(--color-text-main);
-    @apply antialiased; /* Clase de Tailwind para mejor renderizado de fuente */
+    @apply antialiased;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  ::selection {
+    background-color: rgba(34, 211, 238, 0.3);
+    color: var(--color-text-main);
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--color-primary)] text-[var(--color-bg)] px-6 py-2 rounded-lg font-bold hover:bg-[var(--color-primary-hover)] transition-colors;
   }
 }

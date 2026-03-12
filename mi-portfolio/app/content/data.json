@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "name": "Marcos López",
+    "role": "Frontend Developer",
+    "info": "I create beautiful and functional web experiences. Passionate about clean code and modern design."
+  },
+  "projects": [
+    {
+      "id": "pokelytro",
+      "title": "Pokelytro",
+      "description": "A comprehensive platform to explore the Pokémon world, create and save your teams, and unlock more features",
+      "tags": ["Angular 11", "Node.js", "Express", "MongoDB Atlas"],
+      "image": "/images/pokelytro.png",
+      "url": "https://github.com/marcoslgl/pokelytro"
+    },
+    {
+      "id": "lytrogym",
+      "title": "LytroGym",
+      "description": "A health improvement platform where you can create workout routines, consult exercises, and search for healthy recipes",
+      "tags": ["React", "TypeScript", "Tailwind CSS", "Prisma"],
+      "image": "/images/lytrogym.png",
+      "url": "https://github.com/marcoslgl/LitroGym"
+    }
+  ]
+}
