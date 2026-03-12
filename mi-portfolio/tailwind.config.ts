@@ -1,18 +1,21 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 export default <Partial<Config>>{
   theme: {
     extend: {
-      colors: {
-        // Enlazamos con las variables del CSS
-        primary: "var(--color-primary)",
-        secondary: "var(--color-text-secondary)",
-        detail: "var(--color-accent-pink)",
-        "slate-main": "var(--color-text-main)",
+      fontFamily: {
+        display: ['Space Grotesk', 'sans-serif'],
       },
-      backgroundColor: {
-        "dark-deep": "var(--color-bg)",
+      colors: {
+        bg: 'var(--color-bg)',
+        bgSecondary: 'var(--color-bg-secondary)',
+        primary: 'var(--color-primary)',
+        primaryHover: 'var(--color-primary-hover)',
+        secondary: 'var(--color-text-secondary)',
+        main: 'var(--color-text-main)',
+        accent: 'var(--color-accent-pink)',
+        'dark-deep': 'var(--color-bg)',
       },
     },
   },
-};
+}
