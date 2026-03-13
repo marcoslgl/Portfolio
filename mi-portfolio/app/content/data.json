@@ -2,7 +2,8 @@
   "hero": {
     "name": "Marcos López",
     "role": "Full-Stack Developer",
-    "info": "I create beautiful and functional web experiences. Passionate about clean code and modern design."
+    "info": "I create functional and intuitive web experiences. Passionate about clean code and modern design.",
+    "image": "/images/profile.jpg"
   },
   "projects": [
     {
@@ -24,15 +25,15 @@
   ],
   "skills": {
     "Frontend": {
-      "icon": "/images/icons/frontend.svg",
+      "icon": "/icons/frontend.svg",
       "items": ["React", "Vue & Nuxt", "JS/TS", "Tailwind CSS", "Angular"]
     },
     "Backend": {
-      "icon": "/images/icons/backend.svg",
+      "icon": "/icons/backend.svg",
       "items": ["Node.js", "Express", "Python", "MongoDB", "MySQL"]
     },
     "Others": {
-      "icon": "/images/icons/others.svg",
+      "icon": "/icons/others.svg",
       "items": ["Git", "Docker", "AWS", "OpenAI API", "GitHub Actions"]
     }
   }

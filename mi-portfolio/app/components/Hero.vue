@@ -15,11 +15,18 @@ const scrollToElement = (elementId: string): void => {
     class="flex flex-col items-start w-full max-w-4xl mx-auto px-6 py-12"
     aria-labelledby="hero-heading"
   >
-    <h1 id="hero-heading" class="text-main font-bold text-4xl md:text-5xl whitespace-nowrap">
+    <img
+      :src="hero.image"
+      alt="Profile picture of Marcos López"
+      class="mb-6 w-48 h-48 rounded-3xl object-cover shadow-lg"
+      loading="lazy"
+    />
+
+    <h1 id="hero-heading" class="py-6 text-main font-bold text-3xl md:text-4xl">
       Hello, I'm <span class="text-primary">{{ hero.name }}</span>
     </h1>
 
-    <p class="text-secondary text-lg font-semibold mt-4" aria-label="Professional role">
+    <p class="pb-4 text-secondary text-lg font-semibold mt-4" aria-label="Professional role">
       {{ hero.role }}
     </p>
 
@@ -35,7 +42,7 @@ const scrollToElement = (elementId: string): void => {
         aria-label="View my projects and work"
       >
         See projects
-        <img src="/images/icons/arrow.svg" class="w-4 h-4" alt="" />
+        <img src="/icons/arrow.svg" class="w-4 h-4" alt="" />
       </button>
 
       <button

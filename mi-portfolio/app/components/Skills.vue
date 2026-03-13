@@ -46,7 +46,7 @@ const toggleCategory = (category: SkillCategory): void => {
             <h3 class="text-xl font-bold text-primary text-left">{{ category }}</h3>
           </div>
           <img
-            src="/images/icons/chevron.svg"
+            src="/icons/chevron.svg"
             :class="{ 'rotate-180': expandedCategories[category as SkillCategory] }"
             class="w-5 h-5 transition-transform duration-300 flex-shrink-0"
             aria-hidden="true"
