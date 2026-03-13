@@ -43,9 +43,3 @@
     @apply text-2xl;
   }
 }
-
-@layer components {
-  .btn-primary {
-    @apply bg-[var(--color-primary)] text-[var(--color-bg)] px-6 py-2 rounded-lg font-bold hover:bg-[var(--color-primary-hover)] transition-colors;
-  }
-}

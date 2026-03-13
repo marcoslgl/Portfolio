@@ -1,7 +1,7 @@
 {
   "hero": {
     "name": "Marcos López",
-    "role": "Frontend Developer",
+    "role": "Full-Stack Developer",
     "info": "I create beautiful and functional web experiences. Passionate about clean code and modern design."
   },
   "projects": [
@@ -18,8 +18,22 @@
       "title": "LytroGym",
       "description": "A health improvement platform where you can create workout routines, consult exercises, and search for healthy recipes",
       "tags": ["React", "TypeScript", "Tailwind CSS", "Prisma"],
-      "image": "/images/lytrogym.png",
+      "image": "/images/litrogym.png",
       "url": "https://github.com/marcoslgl/LitroGym"
     }
-  ]
+  ],
+  "skills": {
+    "Frontend": {
+      "icon": "/images/icons/frontend.svg",
+      "items": ["React", "Vue & Nuxt", "JS/TS", "Tailwind CSS", "Angular"]
+    },
+    "Backend": {
+      "icon": "/images/icons/backend.svg",
+      "items": ["Node.js", "Express", "Python", "MongoDB", "MySQL"]
+    },
+    "Others": {
+      "icon": "/images/icons/others.svg",
+      "items": ["Git", "Docker", "AWS", "OpenAI API", "GitHub Actions"]
+    }
+  }
 }
