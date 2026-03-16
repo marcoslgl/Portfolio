@@ -29,12 +29,52 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Marcos López | Frontend Developer' },
         { name: 'twitter:description', content: 'Portfolio of Marcos López, Frontend Developer.' },
+        { name: 'theme-color', content: '#0f172a' },
+      ],
+      link: [
+        { rel: 'icon', href: '/favicon.ico' },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
       ],
     },
   },
 
+  ssr: true,
+
   tailwindcss: {
     exposeConfig: false,
     viewer: false,
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+      ignore: ['/'],
+    },
+    minify: true,
+    compressPublicAssets: true,
+    routeRules: {
+      '/images/**': {
+        cache: {
+          maxAge: 60 * 60 * 24 * 365,
+        },
+      },
+      '/icons/**': {
+        cache: {
+          maxAge: 60 * 60 * 24 * 365,
+        },
+      },
+      '/_nuxt/**': {
+        cache: {
+          maxAge: 60 * 60 * 24 * 365,
+        },
+      },
+      '/**': {
+        cache: {
+          maxAge: 60 * 60,
+        },
+      },
+    },
   },
 })

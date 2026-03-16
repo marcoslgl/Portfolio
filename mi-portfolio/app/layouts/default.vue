@@ -1,16 +1,17 @@
 <script setup lang="ts">
 const { scrollProgress } = useScrollProgress()
+const progress = computed(() => Math.round(scrollProgress.value))
 </script>
 
 <template>
   <div class="relative min-h-screen flex flex-col">
     <div
       role="progressbar"
-      :aria-valuenow="Math.round(scrollProgress)"
+      :aria-valuenow="progress"
       aria-valuemin="0"
       aria-valuemax="100"
       aria-label="Scroll progress"
-      class="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary to-accent z-50 transition-[width] duration-700 ease-out"
+      class="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary to-accent z-50 transition-[width] duration-700 ease-out will-change-[width]"
       :style="{ width: `${scrollProgress}%` }"
     ></div>
 
