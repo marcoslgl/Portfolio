@@ -19,7 +19,10 @@ const scrollToElement = (elementId: string): void => {
       :src="hero.image"
       alt="Profile picture of Marcos López"
       class="mb-6 w-48 h-48 rounded-3xl object-cover shadow-lg"
-      loading="lazy"
+      width="192"
+      height="192"
+      loading="eager"
+      fetchpriority="high"
     />
 
     <h1 id="hero-heading" class="py-6 text-main font-bold text-3xl md:text-4xl">

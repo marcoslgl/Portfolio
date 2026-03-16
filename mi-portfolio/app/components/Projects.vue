@@ -51,6 +51,9 @@ const { projects } = store
                     src="/link.svg"
                     :alt="`Enlace al proyecto ${project.title}`"
                     class="w-6 h-6"
+                    width="24"
+                    height="24"
+                    loading="lazy"
                   />
                 </a>
               </div>
