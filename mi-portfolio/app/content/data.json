@@ -1,10 +1,4 @@
 {
-  "hero": {
-    "name": "Marcos López",
-    "role": "Full-Stack Developer",
-    "info": "I create functional and intuitive web experiences. Passionate about clean code and modern design.",
-    "image": "/images/profile.jpg"
-  },
   "projects": [
     {
       "id": "pokelytro",
