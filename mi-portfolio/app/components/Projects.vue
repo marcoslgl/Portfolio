@@ -10,12 +10,7 @@ const { projects } = store
     <div class="w-full max-w-4xl mx-auto px-6">
       <div class="flex items-center gap-4 w-full mb-12">
         <div class="flex-1 border-t border-secondary"></div>
-        <h2
-          id="projects-heading"
-          class="text-main font-bold text-3xl md:text-4xl whitespace-nowrap"
-        >
-          Projects
-        </h2>
+        <h2 id="projects-heading" class="section-title">Projects</h2>
         <div class="flex-1 border-t border-secondary"></div>
       </div>
 
@@ -38,7 +33,7 @@ const { projects } = store
             </figure>
             <div>
               <div class="flex items-center gap-2 mb-3">
-                <h3 class="text-main font-bold text-xl">{{ project.title }}</h3>
+                <h3 class="text-xl">{{ project.title }}</h3>
                 <a
                   v-if="project.url"
                   :href="project.url"
@@ -57,7 +52,7 @@ const { projects } = store
                   />
                 </a>
               </div>
-              <p class="text-secondary leading-relaxed mb-4">{{ project.description }}</p>
+              <p class="text-secondary-p mb-4">{{ project.description }}</p>
               <ul v-if="project.tags?.length" class="flex flex-wrap gap-2">
                 <li
                   v-for="tag in project.tags"

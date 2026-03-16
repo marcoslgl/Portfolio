@@ -19,8 +19,26 @@ const progress = computed(() => Math.round(scrollProgress.value))
       <slot />
     </main>
 
-    <footer class="py-10 text-center text-secondary text-sm">
+    <footer id="footer" class="py-10 text-center text-secondary text-sm">
       <p>&copy; {{ new Date().getFullYear() }} Marcos López. Designed and built with passion.</p>
+      <div class="flex flex-row items-center justify-center gap-4 mt-4 w-fit mx-auto p-2">
+        <a
+          href="https://github.com/marcoslgl"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my GitHub profile"
+          class="hover:text-primary transition-colors hover:scale-110"
+        >
+          <img src="/icons/github.svg" alt="GitHub" class="w-8 h-8" />
+        </a>
+        <a
+          href="mailto:marcoslgl2004@gmail.com"
+          aria-label="Send me an email"
+          class="hover:text-primary transition-colors hover:scale-110"
+        >
+          <img src="/icons/mail.svg" alt="Gmail" class="w-8 h-8" />
+        </a>
+      </div>
     </footer>
   </div>
 </template>

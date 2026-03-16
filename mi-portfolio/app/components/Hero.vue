@@ -24,17 +24,17 @@ const scrollToElement = (elementId: string): void => {
 
     <h1
       id="hero-heading"
-      class="py-6 text-main font-bold text-4xl md:text-5xl leading-tight"
+      class="py-6 text-4xl md:text-5xl"
       style="contain: paint; min-height: 2rem"
     >
       Hello, I'm <span class="text-primary">Marcos López</span>
     </h1>
 
-    <p class="pb-4 text-secondary text-lg font-semibold mt-4" aria-label="Professional role">
+    <p class="text-secondary text-lg font-semibold mt-4" aria-label="Professional role">
       Full-Stack Developer
     </p>
 
-    <p class="text-secondary mt-4 leading-relaxed max-w-2xl" role="doc-subtitle">
+    <p class="text-secondary-p mt-4 max-w-2xl" role="doc-subtitle">
       I create functional and intuitive web experiences. Passionate about clean code and modern
       design.
     </p>
@@ -52,6 +52,7 @@ const scrollToElement = (elementId: string): void => {
 
       <button
         type="button"
+        @click="scrollToElement('footer')"
         class="bg-bg text-secondary font-bold px-6 py-2 rounded-lg cursor-pointer border border-secondary hover:text-primary hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all"
         aria-label="Open contact form or contact information"
       >
