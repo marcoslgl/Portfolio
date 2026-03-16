@@ -18,7 +18,7 @@ const toggleCategory = (category: SkillCategory): void => {
 </script>
 
 <template>
-  <section class="py-16 w-full" aria-labelledby="skills-heading">
+  <section class="py-16 bg-bgSecondary w-full" aria-labelledby="skills-heading">
     <h2
       id="skills-heading"
       class="text-main text-center font-bold text-3xl md:text-4xl whitespace-nowrap"

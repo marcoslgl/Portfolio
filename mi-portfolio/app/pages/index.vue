@@ -1,24 +1,35 @@
 <script setup lang="ts">
-// Lazy load components fuera de viewport para mejorar LCP
+import Hero from '~/components/Hero.vue'
+
+const AboutMe = defineAsyncComponent(() => import('~/components/AboutMe.vue'))
 const Projects = defineAsyncComponent(() => import('~/components/Projects.vue'))
 const Skills = defineAsyncComponent(() => import('~/components/Skills.vue'))
 </script>
+
 <template>
-  <Hero class="pb-20" />
+  <Hero />
   <Suspense>
     <template #default>
-      <Projects class="pb-20" />
+      <AboutMe />
     </template>
     <template #fallback>
-      <div class="pb-20 h-96"></div>
+      <div class="h-64"></div>
     </template>
   </Suspense>
   <Suspense>
     <template #default>
-      <Skills class="pb-20" />
+      <Projects />
     </template>
     <template #fallback>
-      <div class="pb-20 h-96"></div>
+      <div class="h-96"></div>
+    </template>
+  </Suspense>
+  <Suspense>
+    <template #default>
+      <Skills />
+    </template>
+    <template #fallback>
+      <div class="h-96"></div>
     </template>
   </Suspense>
 </template>

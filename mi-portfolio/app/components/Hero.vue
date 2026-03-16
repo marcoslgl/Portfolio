@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { usePortfolioStore } from '~/stores/usePortfolioStore'
 
-const store = usePortfolioStore()
-const { hero } = store
-
 const scrollToElement = (elementId: string): void => {
   const element = document.getElementById(elementId)
   element?.scrollIntoView({ behavior: 'smooth' })
@@ -16,7 +13,7 @@ const scrollToElement = (elementId: string): void => {
     aria-labelledby="hero-heading"
   >
     <img
-      :src="hero.image"
+      src="/images/profile.jpg"
       alt="Profile picture of Marcos López"
       class="mb-6 w-48 h-48 rounded-3xl object-cover shadow-lg"
       width="192"
@@ -25,16 +22,21 @@ const scrollToElement = (elementId: string): void => {
       fetchpriority="high"
     />
 
-    <h1 id="hero-heading" class="py-6 text-main font-bold text-3xl md:text-4xl">
-      Hello, I'm <span class="text-primary">{{ hero.name }}</span>
+    <h1
+      id="hero-heading"
+      class="py-6 text-main font-bold text-4xl md:text-5xl leading-tight"
+      style="contain: paint; min-height: 2rem"
+    >
+      Hello, I'm <span class="text-primary">Marcos López</span>
     </h1>
 
     <p class="pb-4 text-secondary text-lg font-semibold mt-4" aria-label="Professional role">
-      {{ hero.role }}
+      Full-Stack Developer
     </p>
 
     <p class="text-secondary mt-4 leading-relaxed max-w-2xl" role="doc-subtitle">
-      {{ hero.info }}
+      I create functional and intuitive web experiences. Passionate about clean code and modern
+      design.
     </p>
 
     <div class="flex items-center justify-start gap-4 mt-8">

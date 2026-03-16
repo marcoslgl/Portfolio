@@ -6,7 +6,7 @@ const { projects } = store
 </script>
 
 <template>
-  <section class="py-16 bg-bgSecondary w-full" aria-labelledby="projects-heading">
+  <section class="py-16 w-full" aria-labelledby="projects-heading">
     <div class="w-full max-w-4xl mx-auto px-6">
       <div class="flex items-center gap-4 w-full mb-12">
         <div class="flex-1 border-t border-secondary"></div>

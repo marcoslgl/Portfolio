@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+/* Load font with swap strategy to not block LCP */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=auto');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +8,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Optimize font loading */
+    font-display: swap;
   }
 
   :root {
@@ -23,7 +26,12 @@
     background-color: var(--color-bg);
     color: var(--color-text-main);
     @apply antialiased;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family:
+      'Space Grotesk',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      sans-serif;
   }
 
   ::selection {
