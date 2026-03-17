@@ -22,7 +22,25 @@ const { projects } = store
         >
           <div class="flex flex-col gap-4">
             <figure v-if="project.image" class="m-0">
+              <a
+                v-if="project.url"
+                :href="project.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                :aria-label="`Visitar proyecto ${project.title}`"
+                class="inline-block hover:opacity-90 transition-opacity"
+              >
+                <img
+                  :src="project.image"
+                  :alt="project.title"
+                  width="800"
+                  height="400"
+                  class="w-full rounded-lg border border-bgSecondary object-contain bg-bgSecondary hover:border-primary transition-colors"
+                  loading="lazy"
+                />
+              </a>
               <img
+                v-else
                 :src="project.image"
                 :alt="project.title"
                 width="800"
@@ -34,23 +52,6 @@ const { projects } = store
             <div>
               <div class="flex items-center gap-2 mb-3">
                 <h3 class="text-xl">{{ project.title }}</h3>
-                <a
-                  v-if="project.url"
-                  :href="project.url"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  :aria-label="`Visitar ${project.title}`"
-                  class="flex-shrink-0 hover:scale-110 transition-transform"
-                >
-                  <img
-                    src="/link.svg"
-                    :alt="`Enlace al proyecto ${project.title}`"
-                    class="w-6 h-6"
-                    width="24"
-                    height="24"
-                    loading="lazy"
-                  />
-                </a>
               </div>
               <p class="text-secondary-p mb-4">{{ project.description }}</p>
               <ul v-if="project.tags?.length" class="flex flex-wrap gap-2">
