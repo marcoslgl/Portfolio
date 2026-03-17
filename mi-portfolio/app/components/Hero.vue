@@ -1,9 +1,16 @@
 <script setup lang="ts">
 import { usePortfolioStore } from '~/stores/usePortfolioStore'
 
+const store = usePortfolioStore()
+
 const scrollToElement = (elementId: string): void => {
   const element = document.getElementById(elementId)
   element?.scrollIntoView({ behavior: 'smooth' })
+}
+
+const handleContactClick = () => {
+  store.activateContactHighlight()
+  scrollToElement('footer')
 }
 </script>
 
@@ -52,7 +59,7 @@ const scrollToElement = (elementId: string): void => {
 
       <button
         type="button"
-        @click="scrollToElement('footer')"
+        @click="handleContactClick"
         class="bg-bg text-secondary font-bold px-6 py-2 rounded-lg cursor-pointer border border-secondary hover:text-primary hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all"
         aria-label="Open contact form or contact information"
       >

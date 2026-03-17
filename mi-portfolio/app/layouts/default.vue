@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { scrollProgress } = useScrollProgress()
+const store = usePortfolioStore()
 const progress = computed(() => Math.round(scrollProgress.value))
 </script>
 
@@ -27,14 +28,20 @@ const progress = computed(() => Math.round(scrollProgress.value))
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Visit my GitHub profile"
-          class="hover:text-primary transition-colors hover:scale-110"
+          :class="[
+            'transition-all hover:scale-110 text-primary',
+            store.highlightContactIcons && 'ring-2 ring-primary rounded-lg scale-110 animate-pulse',
+          ]"
         >
           <img src="/icons/github.svg" alt="GitHub" class="w-8 h-8" />
         </a>
         <a
           href="mailto:marcoslgl2004@gmail.com"
           aria-label="Send me an email"
-          class="hover:text-primary transition-colors hover:scale-110"
+          :class="[
+            'transition-all hover:scale-110 text-primary',
+            store.highlightContactIcons && 'ring-2 ring-primary rounded-lg scale-110 animate-pulse',
+          ]"
         >
           <img src="/icons/mail.svg" alt="Gmail" class="w-8 h-8" />
         </a>
