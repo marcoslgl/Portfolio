@@ -19,12 +19,7 @@ const toggleCategory = (category: SkillCategory): void => {
 
 <template>
   <section class="py-16 bg-bgSecondary w-full" aria-labelledby="skills-heading">
-    <h2
-      id="skills-heading"
-      class="text-main text-center font-bold text-3xl md:text-4xl whitespace-nowrap"
-    >
-      Technical Skills
-    </h2>
+    <h2 id="skills-heading" class="section-title text-center">Technical Skills</h2>
 
     <ul
       class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto px-16 md:px-10 items-start"
