@@ -37,7 +37,7 @@ const toggleCategory = (category: SkillCategory): void => {
           class="w-full flex items-center p-6 justify-between gap-3 transition-opacity rounded px-2 py-1"
         >
           <div class="flex items-center gap-3">
-            <img :src="skill.icon" class="w-6 h-6" loading="lazy" />
+            <img :src="skill.icon" :alt="`${category} icon`" class="w-6 h-6" loading="lazy" />
             <h3 class="text-xl font-bold text-primary text-left">{{ category }}</h3>
           </div>
           <img
