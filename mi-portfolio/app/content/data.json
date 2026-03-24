@@ -15,6 +15,14 @@
       "tags": ["React", "TypeScript", "Tailwind CSS", "Prisma"],
       "image": "/images/litrogym.png",
       "url": "https://github.com/marcoslgl/LitroGym"
+    },
+    {
+      "id": "gamesdeck",
+      "title": "GamesDeck",
+      "description": "A web app to discover and watch live streams powered by the Twitch Developers API",
+      "tags": ["Vue & Nuxt", "TypeScript", "Tailwind CSS", "Twitch API"],
+      "image": "/images/gamesdeck.png",
+      "url": "https://github.com/marcoslgl/GamesDeck"
     }
   ],
   "skills": {
