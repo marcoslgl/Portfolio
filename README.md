@@ -3,7 +3,7 @@
 Personal portfolio where I showcase my projects as a **Full Stack Developer**.
 
 ## 🌐 Live Website
-- https://portfolio-marcos-lopez.vercel.app/
+- https://portfolio-marcoslgl.vercel.app/
 
 ## 🧰 Tech Stack
 - **Nuxt**
