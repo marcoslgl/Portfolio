@@ -3,7 +3,7 @@
     {
       "id": "pokelytro",
       "title": "Pokelytro",
-      "description": "A comprehensive platform to explore the Pokémon world, create and save your teams, and unlock more features",
+      "description": "A comprehensive platform to explore the Pokémon world, create and save your teams, unlock more features, and use an AI agent to answer questions and help you get the most out of the application",
       "tags": ["Angular 11", "Node.js", "Express", "MongoDB Atlas"],
       "image": "/images/pokelytro.png",
       "url": "https://github.com/marcoslgl/pokelytro"

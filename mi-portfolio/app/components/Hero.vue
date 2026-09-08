@@ -37,13 +37,8 @@ const handleContactClick = () => {
       Hello, I'm <span class="text-primary">Marcos López</span>
     </h1>
 
-    <p class="text-secondary text-lg font-semibold mt-4" aria-label="Professional role">
-      Full-Stack Developer
-    </p>
-
-    <p class="text-secondary-p mt-4 max-w-2xl" role="doc-subtitle">
-      I create functional and intuitive web experiences. Passionate about clean code and modern
-      design.
+    <p class="text-secondary text-lg font-semibold" aria-label="Professional role and specialization">
+      Full-Stack Developer · AI Integration
     </p>
 
     <div class="flex items-center justify-start gap-4 mt-8">
