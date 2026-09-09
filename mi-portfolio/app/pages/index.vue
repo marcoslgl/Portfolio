@@ -34,14 +34,6 @@ const Skills = defineAsyncComponent(() => import('~/components/Skills.vue'))
   </Suspense>
   <Suspense>
     <template #default>
-      <Projects />
-    </template>
-    <template #fallback>
-      <div class="h-96"></div>
-    </template>
-  </Suspense>
-  <Suspense>
-    <template #default>
       <Skills />
     </template>
     <template #fallback>
